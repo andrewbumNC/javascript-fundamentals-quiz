@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+<header> 
+
+<div id=contain-score-time> 
+<div id="highscore-container"> 
+  <div id="scores">View High Scores</div>
+</div>
+  <div id="time-container"> 
+  <p> Timer: <span id="timer-element">75</span> </p>
+</div>
+</div>
+  <div id="welcome-message">
+
+    <h1>JavaScript Fundaementals Quiz</h1>
+    <p>Welcome to your virtual javascript quiz! You will have a limited amount of time to answer an assortment of multiple choice questions. You are not allowed to use notes on this test. If you answer incorrectly you will be able to choose the right answer afterwards. The purpose of this quiz is to learn. Not to grade you harshly. Goodluck. </p>
+    <button id="begin-quiz">Click here to begin</button>
+    </div>
+</header>
+  <main id="main">
+
+
+    <div id="question-one-div" class="question-container">
+      <h2>_______ is a commonly used method to call a function or evaluate an expression at specified intervals. This method is often used as a way to create timers in JavaScript.</h2>
+
+      <ul class="multiple-choice-container" id="multiple-choice-one">
+        <li><button >intervalTime()</button></li>
+        <li><button>timer()</button></li>
+        <li><button id="correct-one">setInterval()</button></li>
+        <li><button>clearInterval()</button></li>
+      </ul>
+    </div>
+
+    <div id="question-two-div" class="question-container">
+      <h2> ____________ allows developers to add event handlers to specified elements. Hint: this allowed you to start the quiz. </h2>
+
+      <ul class="multiple-choice-container" id="multiple-choice-two">
+        <li><button>buttonHandler()</button></li>
+        <li><button>addClickEvent()</button></li>
+        <li><button id="correct-two">addEventListener()</button></li>
+        <li><button>getInput()</button></li>
+      </ul>
+     
+    </div>
+
+    <div id="question-three-div" class="question-container">
+      <h2> Which of the following methods can be used to dynamically edit css styling elements using JavaScript?</h2>
+
+      <ul class="multiple-choice-container" id="multiple-choice-three">
+        <li><button>AttributeSet()</button></li>
+        <li><button>setAttr()</button></li>
+        <li><button id="correct-three">setAttribute()</button></li>
+        <li><button>attr</button></li>
+      </ul>
+     
+    </div>
+
+    <div id="question-four-div" class="question-container">
+      <h2> Which of the following can be used to select html elements using javascript?</h2>
+
+      <ul class="multiple-choice-container" id="multiple-choice-four">
+        <li><button>selectorQuery</button></li>
+        <li><button>elementGetID</button></li>
+        <li><button id="correct-four">querySelector</button></li>
+        <li><button>Queryselector</button></li>
+      </ul>
+     
+    </div>
+
+    
+
+    <div id="quiz-completed"> 
+
+      <h2></h2>
+      <div id="submit-initials"> 
+      <span>Submit initials here:</span> <input type="input" name="initials" id="initials" placeholder="Example: MSB">
+      <button id="submit-button">Submit Initials</button>
+      </div>    
+    </div>
+
+    <div id="high-score-div"> 
+
+      <h3>High Scores!</h3>   
+    <ul id="initials-list"> </ul>
+    <div> 
+    <button id="go-back">Go Back</button>
+    <button id="clear-scores">Clear Scores</button>
+  </div>
+  </div> 
+
+    <div>
+      <h4 id="correct-message">Correct Answer!</h4>
+      <h4 id="incorrect-message">Incorrect Answer! Try Again.</h4>
+    </div>
+
+  
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
